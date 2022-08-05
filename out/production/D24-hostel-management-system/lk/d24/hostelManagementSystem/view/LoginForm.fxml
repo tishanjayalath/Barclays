@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnMain" prefHeight="715.0" prefWidth="1048.0" stylesheets="@asserts/style/css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.d24.hostelManagementSystem.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="apnReg" prefHeight="723.0" prefWidth="1043.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label prefHeight="723.0" prefWidth="338.0" style="-fx-background-color: #7f8c8d;" text=" " />
+            <ImageView fitHeight="733.0" fitWidth="705.0" layoutX="338.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hostel.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUsernameReg" layoutX="42.0" layoutY="354.0" onKeyReleased="#userNameRegOKR" prefHeight="31.0" prefWidth="260.0" promptText="User Name" unFocusColor="BLACK" />
+            <JFXButton fx:id="btnRegister" layoutX="30.0" layoutY="534.0" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font></JFXButton>
+            <Label layoutX="131.0" layoutY="649.0" text="User ID : ">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserId" layoutX="184.0" layoutY="649.0" text="U001">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLoginOnReg" layoutX="184.0" layoutY="534.0" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font></JFXButton>
+            <JFXPasswordField fx:id="pwPasswordReg" layoutX="42.0" layoutY="403.0" onKeyReleased="#pwRegOKR" prefHeight="31.0" prefWidth="260.0" promptText="Password" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="pwConfirmPasswordReg" layoutX="42.0" layoutY="454.0" onKeyReleased="#confirmPwOKR" prefHeight="31.0" prefWidth="260.0" promptText="Confirm Password" unFocusColor="BLACK" />
+            <Label layoutX="59.0" layoutY="258.0" text="Barclays Hostel">
+               <font>
+                  <Font name="Impact" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="615.0" prefHeight="65.0" prefWidth="128.0" style="-fx-background-color: #7f8c8d;" text="  " />
+            <ImageView fitHeight="126.0" fitWidth="112.0" layoutX="109.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hassss.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnLogin" layoutX="-2.0" prefHeight="710.0" prefWidth="1048.0">
+         <children>
+            <Label layoutX="2.0" prefHeight="723.0" prefWidth="338.0" style="-fx-background-color: #7f8c8d;" text=" " />
+            <ImageView fitHeight="733.0" fitWidth="705.0" layoutX="340.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hostel.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUserName" layoutX="47.0" layoutY="344.0" onKeyReleased="#usernameOnKeyRls" prefHeight="31.0" prefWidth="247.0" promptText="User Name" unFocusColor="BLACK" />
+            <JFXButton fx:id="btnLogin" layoutX="100.0" layoutY="481.0" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblRegister" layoutX="143.0" layoutY="547.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="64.0" layoutY="238.0" text="Barclays Hostel">
+               <font>
+                  <Font name="Impact" size="33.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="pwPassword" layoutX="47.0" layoutY="401.0" onKeyReleased="#passwordOnKeyRls" prefHeight="31.0" prefWidth="247.0" promptText="Password" unFocusColor="BLACK" />
+            <ImageView fx:id="imgShowPw" fitHeight="17.0" fitWidth="26.0" layoutX="268.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/outline_visibility_black_24dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="733.0" fitWidth="705.0" layoutX="340.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hostel.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtPassword" layoutX="49.0" layoutY="401.0" onKeyReleased="#passwordOnKeyRls" prefHeight="31.0" prefWidth="247.0" promptText="Password" visible="false" />
+            <ImageView fitHeight="126.0" fitWidth="112.0" layoutX="117.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hassss.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnWelcome" prefHeight="723.0" prefWidth="1048.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="733.0" fitWidth="1048.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/image/hostel.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

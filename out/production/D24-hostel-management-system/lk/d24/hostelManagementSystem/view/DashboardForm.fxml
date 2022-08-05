@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1067.0" stylesheets="@asserts/style/css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.d24.hostelManagementSystem.controller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="422.0" layoutX="170.0" layoutY="183.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="770.0" />
+      <Label alignment="CENTER" layoutX="438.0" layoutY="197.0" prefHeight="49.0" prefWidth="200.0" text="Need To Pay">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStudentsNotPaid" layoutX="202.0" layoutY="266.0" prefHeight="333.0" prefWidth="707.0">
+        <columns>
+          <TableColumn prefWidth="232.0" text="Student ID" />
+            <TableColumn prefWidth="210.0" text="Room ID" />
+            <TableColumn prefWidth="264.0" text="Name" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="96.0" layoutX="186.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="302.0" />
+      <Ellipse fill="#e0a33f" layoutX="247.0" layoutY="116.0" radiusX="43.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="63.0" fitWidth="61.0" layoutX="217.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/image/users3.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="96.0" layoutX="617.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="302.0" />
+      <Ellipse fill="#5caabf" layoutX="674.0" layoutY="116.0" radiusX="43.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="49.0" fitWidth="61.0" layoutX="650.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/image/icons8-hostel-60.png" />
+         </image></ImageView>
+      <Label fx:id="lblStudentCount" layoutX="355.0" layoutY="117.0" prefHeight="17.0" prefWidth="30.0" text="22" textFill="#ff8080">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="86.0" prefHeight="24.0" prefWidth="136.0" text="Total Students">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomAvailableCount" layoutX="806.0" layoutY="124.0" prefHeight="17.0" prefWidth="30.0" text="22" textFill="#da6e6e">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="749.0" layoutY="91.0" prefHeight="24.0" prefWidth="144.0" text="Available Rooms">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieStudentByGender" layoutY="11.0" prefHeight="96.0" prefWidth="111.0" visible="false" />
+   </children>
+</AnchorPane>
